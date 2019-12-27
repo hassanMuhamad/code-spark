@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: #eeeeee !important;
+  background-color: transparent;
+}
+
+.editor-container {
+  display: flex;
+}
+
+.side-menu {
+  height: 100vh;
+  width: 50px;
+  background-color: #202020;
+}
+
+.side-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-inline-start: 0 !important;
+}
+
+.side-menu ul li {
+  padding-left: 10px;
+  margin: .5rem 0;
+  cursor: pointer;
+}
+
+.side-menu ul li img {
+  max-width: 30px;
+  opacity: .7;
+}
+
+.side-menu ul li img:hover {
+  max-width: 30px;
+  opacity: 1;
+}
+
+.is-active {
+  border-left: 2px solid #fff;
+}
+
+.is-active img {
+  opacity: 1 !important;
+}
+
+#editor {
+  flex: 1;
+  height: 100vh;
+}
+
+.monaco-editor {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  max-width: 175px;
+}
+
+#root h2 {
+  color: #eeeeee !important;
+  background-color: transparent;
+  height: 100vh;
+  width: 100vw;
+}
+
+.desc {
+  color: #cccccc;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+#checklabel {
+  color: #eeeeee !important;
+}
+
+#checklabel::before {
+  background-color: rgb(128, 128, 128) ;
+  transition: all 700ms ease-in-out;
+}
+
+.themeSelected::after
+{
+  left: 2.15rem !important;
+}
+
+.themeSelected::before 
+{
+  background-color: greenyellow !important;
+}
+
+.secondary {
+  border: 1px solid #cccccc !important
+}
+
+.secondary:hover {
+  border: none !important;
+}
+
+.run, .directory, .git, .upload, .download
+{
+  display: none;
+  flex: 1;
+  height: 100vh;
+}
+
+.run img, .directory img, .git img, .upload img, .download img
+{
+  max-height: 250px;
+  max-width: 250px;
+}

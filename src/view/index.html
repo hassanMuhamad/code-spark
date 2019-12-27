@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Electron app</title>
+  <link rel="stylesheet" href="../../public/assets/styles/vendor/semantic-ui.css">
+  <link rel="stylesheet" href="../../public/assets/styles/css/code-editor.css">
+<body>
+  <div id="root" class="container">
+    <div id="intial-interface" class="intial-interface">
+      <h2 class="ui center aligned icon header">
+        <i class="icon">
+          <img class="logo" src="../../public/assets/img/svg/logo.svg"/>
+        </i>
+        Code Spark
+        <p class="desc">
+          a minimal, lightweight code editor.
+        </p>
+        <div class="theme-select">
+          <div class="ui form">
+            <div class="inline field">
+              <div class="ui toggle checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label id="checklabel">Dark mode is <span id="checklabelstat">desactivated</span></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button id="launchBtn" class="ui secondary button">
+            Launch
+          </button>
+        </div>
+      </h2>
+    </div>
+  </div>
+</head>
+  <script src="./renderer.js"></script>
+</body>
+</html>
