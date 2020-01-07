@@ -9,7 +9,9 @@ This project was made to fulfill the challenge we've been given at our universit
 the requirement to run this project are : 
 - install yarn 
 - install node.js
-* the first and only step is to write this command on the terminal window "yarn start"
+- Open the project folder with your favorite code editor.
+- run "yarn install" or just "yarn" to install dependencies.
+- start the project with the "yarn start" command.
 # Contribute 
 Feel free to contribute and add any features to our project. Don't forget it's open source.
 # licence

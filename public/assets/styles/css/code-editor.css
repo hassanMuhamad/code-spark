@@ -114,3 +114,27 @@ body {
   max-height: 250px;
   max-width: 250px;
 }
+
+.directory, .run, .git, .upload, .download 
+{
+  text-align: center;
+}
+
+#folderPath
+{
+  color: #eeeeee;
+  background-color: #292929;
+  border-radius: 5px;
+  padding: .5rem .25rem;
+  text-align: center;
+}
+
+#folderPath input
+{
+  background: none !important;
+}
+
+.secondary-text
+{
+  opacity: .7;
+}
