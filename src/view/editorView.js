@@ -4,8 +4,8 @@ const fs = require('fs')
 const path = require('path')
  
  
-let themeIsDark
- 
+let themeIsDark // indecate Dark theme is on or not 
+ // integration 
 try
 {
   var data = fs.readFileSync(path.join(__dirname, 'config/editor.config'), 'utf8')
@@ -26,14 +26,17 @@ loader().then((monaco) => {
     automaticLayout: true
   })
 })
- 
-const file = document.getElementById('file')
+ // page Manupilation 
+
+ // icons 
+const file = document.getElementById('file') 
 const directory = document.getElementById('directory')
 const run = document.getElementById('run')
 const git = document.getElementById('git')
 const upload = document.getElementById('upload')
 const download = document.getElementById('download')
  
+//divs 
 const fileClass = document.getElementsByClassName('file')
 const directoryClass = document.getElementsByClassName('directory')
 const runClass = document.getElementsByClassName('run')
@@ -41,6 +44,7 @@ const gitClass = document.getElementsByClassName('git')
 const uploadClass = document.getElementsByClassName('upload')
 const downloadClass = document.getElementsByClassName('download')
  
+// remove 'is active' decoration 
 function setAllOff ()
 {
   file.classList.remove('is-active')
@@ -51,6 +55,7 @@ function setAllOff ()
   download.classList.remove('is-active')
 }
 
+// handle click event on the file icon and show the assosiated div
 
 file.addEventListener('click', () => {
   fileClass[0].style.display = 'block'
@@ -62,6 +67,8 @@ file.addEventListener('click', () => {
   setAllOff()
   file.classList.add('is-active')
 })
+
+// handle click event on the file icon and show the assosiated div
  
 directory.addEventListener('click', () => {
   fileClass[0].style.display = 'none'
@@ -119,4 +126,3 @@ download.addEventListener('click', () => {
   setAllOff()
   download.classList.add('is-active')
 })
-

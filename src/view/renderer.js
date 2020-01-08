@@ -5,9 +5,10 @@ const path = require('path')
 let currentWindowSetting = globalWindowConfiguration
 const launchBtn = document.getElementById('launchBtn')
 
+// handler initial page 
 if (document.getElementById('intial-interface'))
 {
-
+// launch button click handler
 launchBtn.addEventListener('click', function () {
   currentWindowSetting.width = 700
   currentWindowSetting.height = 700
