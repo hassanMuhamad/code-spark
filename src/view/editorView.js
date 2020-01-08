@@ -4,7 +4,7 @@ const fs = require('fs')
 const path = require('path')
  
  
-let themeIsDark
+let themeIsDark // indecate Dark theme is on or not 
  
 try
 {
